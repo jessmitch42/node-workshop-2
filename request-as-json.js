@@ -1,7 +1,12 @@
-var request = require("request");
-function requestData(err, results) {
-    if (err === null && results !== null)
-    return results;
+
+var request = require("request")
+
+function requestData (err, res) {
+    if(err) {
+        console.log("There was an error: " + err)
+    } else {
+        console.log(res);
+    }
 }
 
 function requestJson (url, callBack) {
@@ -14,11 +19,11 @@ function requestJson (url, callBack) {
                 var parsed = JSON.parse(body);
                 callBack(null, parsed);
             }
-            catch (e) {
+            catch (err) {
                 callBack(err);
             }
         }
     });
 }
 
-requestJson("http://www.google.ca", requestData);
+requestJson("http://api.open-notify.org/iss-now.json", requestData);
