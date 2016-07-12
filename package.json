@@ -1,0 +1,27 @@
+{
+  "name": "node-workshop",
+  "version": "1.0.0",
+  "description": "\"July 12th - Node Workshop (day 2 of node)",
+  "main": "request-as-json.js",
+  "dependencies": {
+    "request": "^2.73.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessmitch42/node-workshop-2.git"
+  },
+  "keywords": [
+    "\"javascript\"",
+    "\"node\""
+  ],
+  "author": "Jess Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessmitch42/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/jessmitch42/node-workshop-2#readme"
+}
