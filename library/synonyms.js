@@ -16,7 +16,7 @@ SynonymAPI.prototype = {
             else {
                 try {
                     var parsed = JSON.parse(body);
-                    callBack(null, this.parsed);
+                    callBack(null, parsed);
                 }
                 catch (err) {
                     callBack(err);
@@ -26,15 +26,16 @@ SynonymAPI.prototype = {
     }
 };
 
-function requestData (err, res) {
-    if(err) {
-        console.log("There was an error: " + err)
-    } else {
-        console.log(res);
-    }
-}
+// function requestData (err, res) {
+//     if(err) {
+//         console.log("There was an error: " + err)
+//     } else {
+//         console.log(res);
+//     }
+// }
+// var x = new SynonymAPI(API);
+// x.getSynonym("cat", requestData);
 
-SynonymAPI.getSynonym("cat", requestData);
 
 
 module.exports = SynonymAPI;

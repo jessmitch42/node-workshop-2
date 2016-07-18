@@ -1,5 +1,6 @@
 var request = require("request");
 var prompt = require("prompt");
+var clc = require('cli-color');
 
 var apiKey = "b8daf4bb4b587b8f599d668472103d51"; 
 
